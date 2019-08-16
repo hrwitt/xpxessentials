@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/exploreLayout">
+
+    <android.support.constraint.Guideline
+            android:id="@+id/gdlTitleTop"
+            android:layout-width="wrap_content"
+            android:layout-height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.08"
+    />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:textSize="36dp"
+            android:text="Explore The Esssentials"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/gdlTitleTop"/>
+
+    <android.support.constraint.Guideline
+            android:id="@+id/gdlExpBtnLeft"
+            android:layout-width="wrap_content"
+            android:layout-height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.15"
+    />
+
+    <android.support.constraint.Guideline
+            android:id="@+id/gdlExpBtnRight"
+            android:layout-width="wrap_content"
+            android:layout-height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.85"
+    />
+
+    <android.support.constraint.Guideline
+            android:id="@+id/gdlExpBtnTop"
+            android:layout-width="wrap_content"
+            android:layout-height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.28"
+    />
+
+    <android.support.constraint.Guideline
+            android:id="@+id/gdlExpBtnBottom"
+            android:layout-width="wrap_content"
+            android:layout-height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.82"
+    />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/exploreBtnLayout"
+            app:layout_constraintLeft_toLeftOf="@id/gdlExpBtnLeft"
+            app:layout_constraintRight_toRightOf="@id/gdlExpBtnRight"
+            app:layout_constraintTop_toTopOf="@id/gdlExpBtnTop"
+            app:layout_constraintBottom_toBottomOf="@id/gdlExpBtnBottom">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
