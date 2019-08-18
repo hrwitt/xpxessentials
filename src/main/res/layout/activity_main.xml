@@ -8,10 +8,10 @@
         tools:context=".WelcomeActivity"
 >
 
-    <android.support.constraint.Guideline
+    <androidx.constraintlayout.widget.Guideline
             android:id="@+id/gdlTitleTop"
-            android:layout-width="wrap_content"
-            android:layout-height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.08"
     />
@@ -22,30 +22,33 @@
             android:textSize="42dp"
             android:text="XPX Essentials"
             android:textStyle="bold"
+            android:textColor="@android:color/holo_red_dark"
+            android:fontFamily="serif"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="@id/gdlTitleTop"/>
+            app:layout_constraintTop_toTopOf="@id/gdlTitleTop"
+            />
 
-    <android.support.constraint.Guideline
+    <androidx.constraintlayout.widget.Guideline
             android:id="@+id/gdlButtonsLeft"
-            android:layout-width="wrap_content"
-            android:layout-height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.2"
     />
 
-    <android.support.constraint.Guideline
+    <androidx.constraintlayout.widget.Guideline
             android:id="@+id/gdlButtonsRight"
-            android:layout-width="wrap_content"
-            android:layout-height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.8"
     />
 
-    <android.support.constraint.Guideline
+    <androidx.constraintlayout.widget.Guideline
             android:id="@+id/gdlButtonsTop"
-            android:layout-width="wrap_content"
-            android:layout-height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.32"
     />
@@ -82,20 +85,28 @@
                 android:layout_marginTop="3dp"
                 android:padding="10dp"
         />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnContinue"
+            android:text="Need an Account?"
+            android:clickable="true"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <android.support.constraint.Guideline
+    <androidx.constraintlayout.widget.Guideline
             android:id="@+id/gdlLogoLeft"
-            android:layout-width="wrap_content"
-            android:layout-height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.4"
     />
 
-    <android.support.constraint.Guideline
+    <androidx.constraintlayout.widget.Guideline
             android:id="@+id/gdlLogoRight"
-            android:layout-width="wrap_content"
-            android:layout-height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.9"
     />

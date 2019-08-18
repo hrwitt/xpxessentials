@@ -1,5 +1,7 @@
 package com.example.xpxessentials
 
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -30,7 +32,11 @@ class WelcomeActivity : AppCompatActivity() {
     }
 
     private val logoSelect = View.OnClickListener {
-        Toast.makeText(this@WelcomeActivity,"This will redirect to the website",Toast.LENGTH_LONG).show()
+        val openURL = Intent(Intent.ACTION_VIEW)
+        openURL.data = Uri.parse("https://www.xpanxion.com")
+        startActivity(openURL)
     }
 
 }
+
+

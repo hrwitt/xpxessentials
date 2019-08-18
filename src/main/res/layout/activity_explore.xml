@@ -9,8 +9,8 @@
 
     <android.support.constraint.Guideline
             android:id="@+id/gdlTitleTop"
-            android:layout-width="wrap_content"
-            android:layout-height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.08"
     />
@@ -27,32 +27,32 @@
 
     <android.support.constraint.Guideline
             android:id="@+id/gdlExpBtnLeft"
-            android:layout-width="wrap_content"
-            android:layout-height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.15"
     />
 
     <android.support.constraint.Guideline
             android:id="@+id/gdlExpBtnRight"
-            android:layout-width="wrap_content"
-            android:layout-height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.85"
     />
 
     <android.support.constraint.Guideline
             android:id="@+id/gdlExpBtnTop"
-            android:layout-width="wrap_content"
-            android:layout-height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.28"
     />
 
     <android.support.constraint.Guideline
             android:id="@+id/gdlExpBtnBottom"
-            android:layout-width="wrap_content"
-            android:layout-height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.82"
     />
