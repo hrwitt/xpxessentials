@@ -7,7 +7,106 @@
     android:layout_height="match_parent"
     android:id="@+id/byPositionLayout">
 
-    
+    <android.support.constraint.Guideline
+        android:id="@+id/gdlTitleTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.10"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:textSize="36dp"
+        android:text="Select Position Area"
+        android:textStyle="bold"
+        android:id="@+id/txtExplore"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/gdlTitleTop"/>
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gdlExpBtnLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.20"
+        />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gdlExpBtnRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.80"
+        />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gdlExpBtnTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.22"
+        />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gdlExpBtnBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.91"
+        />
+
+    <ImageButton
+        android:id="@+id/btnQA"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/quality_assurance_box_button"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@id/gdlExpBtnLeft"
+        app:layout_constraintRight_toRightOf="@id/gdlExpBtnRight"
+        app:layout_constraintTop_toTopOf="@id/gdlExpBtnTop" />
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/business_analyst_box_button"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/btnBA"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toLeftOf="@id/gdlExpBtnLeft"
+        app:layout_constraintRight_toRightOf="@id/gdlExpBtnRight"
+        app:layout_constraintTop_toBottomOf="@id/btnQA"/>
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/development_box_button"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/btnDev"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toLeftOf="@id/gdlExpBtnLeft"
+        app:layout_constraintRight_toRightOf="@id/gdlExpBtnRight"
+        app:layout_constraintTop_toBottomOf="@id/btnBA"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/exploreBtnLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/gdlExpBtnBottom"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@id/gdlExpBtnLeft"
+        app:layout_constraintRight_toRightOf="@id/gdlExpBtnRight"
+        app:layout_constraintTop_toTopOf="@id/gdlExpBtnTop"
+        app:layout_constraintVertical_bias="0.0">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
