@@ -21,16 +21,27 @@
             android:textSize="36dp"
             android:text="Explore The Esssentials"
             android:textStyle="bold"
+            android:id="@+id/txtExplore"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="@id/gdlTitleTop"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:textSize="36dp"
+        android:text="By"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/gdlExpBtnLeft"
+        app:layout_constraintRight_toRightOf="@id/gdlExpBtnRight"
+        app:layout_constraintTop_toBottomOf="@id/txtExplore"/>
 
     <android.support.constraint.Guideline
             android:id="@+id/gdlExpBtnLeft"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.15"
+            app:layout_constraintGuide_percent="0.20"
     />
 
     <android.support.constraint.Guideline
@@ -38,7 +49,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.85"
+            app:layout_constraintGuide_percent="0.80"
     />
 
     <android.support.constraint.Guideline
@@ -56,6 +67,64 @@
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.82"
     />
+
+    <ImageButton
+        android:id="@+id/btnPosition"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/position_button"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@id/gdlExpBtnLeft"
+        app:layout_constraintRight_toRightOf="@id/gdlExpBtnRight"
+        app:layout_constraintTop_toTopOf="@id/gdlExpBtnTop" />
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/interest_button"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/btnInterests"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toLeftOf="@id/gdlExpBtnLeft"
+        app:layout_constraintRight_toRightOf="@id/gdlExpBtnRight"
+        app:layout_constraintTop_toBottomOf="@id/btnPosition"/>
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/goals_button"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/btnGoals"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toLeftOf="@id/gdlExpBtnLeft"
+        app:layout_constraintRight_toRightOf="@id/gdlExpBtnRight"
+        app:layout_constraintTop_toBottomOf="@id/btnInterests"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:textSize="36dp"
+        android:text="Or"
+        android:textStyle="bold"
+        android:id="@+id/txtOr"
+        app:layout_constraintLeft_toLeftOf="@id/gdlExpBtnLeft"
+        app:layout_constraintRight_toRightOf="@id/gdlExpBtnRight"
+        app:layout_constraintTop_toBottomOf="@id/btnGoals"/>
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/view_all_button"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/btnViewAll"
+        android:layout_marginTop="5dp"
+        app:layout_constraintLeft_toLeftOf="@id/gdlExpBtnLeft"
+        app:layout_constraintRight_toRightOf="@id/gdlExpBtnRight"
+        app:layout_constraintTop_toBottomOf="@id/txtOr"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="0dp"
