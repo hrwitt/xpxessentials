@@ -7,7 +7,7 @@
         android:layout_height="match_parent"
         android:id="@+id/exploreLayout">
 
-    <android.support.constraint.Guideline
+    <androidx.constraintlayout.widget.Guideline
             android:id="@+id/gdlTitleTop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -36,7 +36,7 @@
         app:layout_constraintRight_toRightOf="@id/gdlExpBtnRight"
         app:layout_constraintTop_toBottomOf="@id/txtExplore"/>
 
-    <android.support.constraint.Guideline
+    <androidx.constraintlayout.widget.Guideline
             android:id="@+id/gdlExpBtnLeft"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -44,7 +44,7 @@
             app:layout_constraintGuide_percent="0.20"
     />
 
-    <android.support.constraint.Guideline
+    <androidx.constraintlayout.widget.Guideline
             android:id="@+id/gdlExpBtnRight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -52,7 +52,7 @@
             app:layout_constraintGuide_percent="0.80"
     />
 
-    <android.support.constraint.Guideline
+    <androidx.constraintlayout.widget.Guideline
             android:id="@+id/gdlExpBtnTop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -60,7 +60,7 @@
             app:layout_constraintGuide_percent="0.28"
     />
 
-    <android.support.constraint.Guideline
+    <androidx.constraintlayout.widget.Guideline
             android:id="@+id/gdlExpBtnBottom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

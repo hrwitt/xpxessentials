@@ -25,6 +25,7 @@ class WelcomeActivity : AppCompatActivity() {
 
         btnLogin.setOnClickListener(loginSelected)
         btnLogo.setOnClickListener(logoSelect)
+        btnContinue.setOnClickListener(continueSelect);
     }
 
     private val loginSelected = View.OnClickListener {
@@ -35,6 +36,11 @@ class WelcomeActivity : AppCompatActivity() {
         val openURL = Intent(Intent.ACTION_VIEW)
         openURL.data = Uri.parse("https://www.xpanxion.com")
         startActivity(openURL)
+    }
+
+    private val continueSelect = View.OnClickListener {
+        val goToExplore = ExploreActivity.newExploreIntent(this)
+        startActivity(goToExplore)
     }
 
 }
